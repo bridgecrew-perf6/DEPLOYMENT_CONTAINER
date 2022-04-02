@@ -1,0 +1,31 @@
+version: '2.1'
+
+networks:
+  brandmodel:
+
+services:
+  tfserver:
+    container_name: modelservice
+    image: tensorflow/serving
+    ports:
+      - "8500:8500"
+      - "8501:8501"
+    volumes:
+      - ${PWD}/volume/model/:/models/
+
+    networks:
+      - brandmodel
+    command:
+      - '--model_config_file=/models/models.config'
+      - '--model_config_file_poll_wait_seconds=60'
+
+  flaskserver:
+    container_name: flaskapi
+    image: trv30/flaskapp
+    ports:
+      - "5000:5000"
+    volumes:
+      - ${PWD}/volume/data/:/apps/data/
+
+    networks:
+      - brandmodel
