@@ -62,7 +62,7 @@
 docker build -t trv30/flaskapp:latest buildingimage
 ```
 - It is an optional step to rebuild the image on local.
-- Again it is not required as the images will be pulled while running the other steps.
+- Again it is not required as the images will be pulled while running the other step.
 
 ## Application Running and Testing Steps
 - Open a new terminal in vs code and run this command
