@@ -95,4 +95,4 @@ curl -d '{"model_name": "fashionmnist", "image": "image (2).jpg"}'     -H 'Conte
 {"Final Prediction":{"class":"Shirt","confidence":1.0}}
 ```
 ## POSTMAN SNAPSHOT
-![POSTMAN SNAPSHOT](https://github.com/Trajvoid/VS_DEPLOYMENT_CONTAINER/blob/main/postman_snapshot.png])
+![alt text](https://raw.githubusercontent.com/Trajvoid/VS_DEPLOYMENT_CONTAINER/main/postman_snapshot.png)
