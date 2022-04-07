@@ -1,7 +1,7 @@
 version: '2.1'
 
 networks:
-  brandmodel:
+  multimodel:
 
 services:
   tfserver:
@@ -14,7 +14,7 @@ services:
       - ${PWD}/volume/model/:/models/
 
     networks:
-      - brandmodel
+      - multimodel
     command:
       - '--model_config_file=/models/models.config'
       - '--model_config_file_poll_wait_seconds=60'
@@ -28,4 +28,4 @@ services:
       - ${PWD}/volume/data/:/apps/data/
 
     networks:
-      - brandmodel
+      - multimodel
