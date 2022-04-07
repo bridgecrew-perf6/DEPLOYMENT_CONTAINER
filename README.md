@@ -1,7 +1,7 @@
 # VS_DEPLOYMENT_CONTAINER
 - This project is structured to run in a Visual Studio Code Remote Container.
 - Clone the repository.
-- Make sure the structure cloned will look like this.  
+- The root folder structure will look like this.  
 ```shell
 .
 ├── buildingimage
@@ -47,7 +47,7 @@
 
 ```
 
-- Before running opening this folder please make sure that you have docker running on your system.
+- Before opening this folder please make sure that you have docker running on your system.
 - Once docker is there and running open the folder in VS code.
 - The moment you open this folder one extension of development remote container will automatically be given to install.
 - Make sure you install and then click to rebuild the container.
