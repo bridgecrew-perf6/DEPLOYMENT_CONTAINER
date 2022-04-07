@@ -69,7 +69,7 @@ docker build -t trv30/flaskapp:latest buildingimage
 ```shell
 docker-compose up
 ```
-- The serives named modelservice (tensorflow serving) and flaskapi will start running.
+- The services named modelservice (tensorflow serving) and flaskapi will start running.
 - You can test the service through Command line or postman.
 ## API Hit With Comandline  
 ```shell
