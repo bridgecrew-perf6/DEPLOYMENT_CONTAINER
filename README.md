@@ -1,5 +1,5 @@
-# VS_DEPLOYMENT_CONTAINER
-- This project is structured to run in a Visual Studio Code Remote Container.
+# DEPLOYMENT_CONTAINER
+- Visual Studio Code Remote Container is all you need to run this project.
 - Clone the repository.
 - The root folder structure will look like this.  
 ```shell
